@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(Images/Red-Sky-1200.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.wall {
+  background: gray;
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+}
+
+.left {
+  transform: perspective(100vh) translate3d(-30vw, 0, 30vh) rotateY(90deg);
+  transform-origin: 50% 25%;
+}
+
+.right {
+  transform: perspective(100vh) translate3d(30vw, 0, 30vh) rotateY(-90deg);
+  transform-origin: 50% 25%;
+}
